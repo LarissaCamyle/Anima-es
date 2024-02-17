@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=IBM+Plex+Mono&display=swap');
+
+html, body{
+	width: 100%;
+	height: 100%;
+	background: #7b2d2d;
+	margin: 0px;
+}
+
+/*Cabecalho---------------------------------------------------------------------*/
+.cabecalho {
+	display: flex;
+	justify-content: center;
+	border-bottom:  0.6px solid #fcfdffd9;
+	height: 50px;
+	align-items: center;
+}
+
+.cabecalho-texto {
+	font-family: 'Concert One', sans-serif;
+	color: #ffdfdf;
+}
+
+/*Codigo------------------------------------------------------------------------*/
+.codigo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.codigo-texto {
+	width: 500px; 
+	height: 400px;
+	font-family: 'IBM Plex Mono', monospace;
+	color: white;
+	font-size: 23px;
+	padding-top: 40px;
+}
+
+.codigo-texto-linha1, .codigo-texto-linha2, .codigo-texto-linha3,
+.codigo-texto-linha5, .codigo-texto-linha6{
+	display: flex;
+	gap: 15px;
+	height: 40px;
+	align-items: center;
+	padding-bottom: 15px;
+}
+
+.codigo-texto-linha1-palavra{
+	width: 80px;
+    	padding-left: 2%;
+    	padding-bottom: 1%;
+    	color: #7f0606;
+    	background: #f59696;
+    	height: 30px;
+    	border-radius: 3px;
+}
+
+.codigo-texto-linha2, .codigo-texto-linha4, .codigo-texto-linha5,
+.codigo-texto-linha7{
+	padding-left: 10%;
+}
+
+.codigo-texto-linha2-palavra{
+	width: 68px;
+    	padding-left: 2%;
+    	padding-bottom: 1%;
+    	color: #7f0606;
+    	background: #f7c5c7;
+    	height: 30px;
+    	border-radius: 3px;
+}
+
+.codigo-texto-linha3, .codigo-texto-linha6{
+	padding-left: 20%;
+}
+
+.codigo-texto-linha3-palavra{
+	width: 135px;
+    	padding-left: 2%;
+    	padding-bottom: 1%;
+    	color: #fff0f0;
+    	background: #630303;
+    	height: 30px;
+    	border-radius: 3px;
+}
+
+.codigo-texto-linha5-palavra{
+	width: 40px;
+    	padding-left: 2%;
+    	padding-bottom: 1%;
+    	height: 30px;
+    	border-radius: 3px;
+    	color: #7f0606;
+    	background: #f59696;
+}
+
+.codigo-texto-linha6-palavra{
+	width: 130px;
+    	padding-left: 2%;
+    	padding-bottom: 1%;
+    	color: #7f0606;
+    	background: #f7c5c7;
+    	height: 30px;
+    	border-radius: 3px;
+}	
+
+
+/*Codigo Descricao -------------------------------------------------------------*/
+.codigo-descricao {
+	width: 300px;
+	height: 400px;
+	font-family: monospace;
+	color: white;
+	font-size: 21px;
+	padding-top: 45px;
+	padding-left: 10px;
+}
+
+.codigo-descricao-linha1, .codigo-descricao-linha2, .codigo-descricao-linha3,
+.codigo-descricao-linha4, .codigo-descricao-linha5{
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	height: 50px;
+	padding-bottom: 3px;
+}
+
+.codigo-descricao-cor1{
+	width: 20px;
+	height: 20px;
+	background: #f59696;
+	border-radius: 50%;
+}
+
+.codigo-descricao-cor2{
+	width: 20px;
+	height: 20px;
+	background: #f7c5c7;
+	border-radius: 50%;
+}
+
+.codigo-descricao-cor3{
+	width: 20px;
+	height: 20px;
+	background: #530101;
+	border-radius: 50%;
+}
+
+.codigo-descricao-linha4{
+	padding-top: 35px;
+}
+
+.codigo-descricao-cor4{
+	width: 20px;
+	height: 20px;
+	background: #f59696;
+	border-radius: 50%;
+}
+
+.codigo-descricao-cor5{
+	width: 20px;
+	height: 20px;
+	background: #f7c5c7;
+	border-radius: 50%;
+}
+
+.codigo-descricao-conteudo{
+
+}
+
+/*Transformacao****************************************************************/
+.transformacao {
+	align-content: center;
+}
+
+.hr-transformacao {
+	margin-left: 25%;
+    	margin-bottom: 10px;
+    	width: 50%;
+    	border-top: 3px solid #0000006b;
+    	display: flex;
+    	justify-content: center;
+    	font-family: 'Concert One', sans-serif;
+    	color: #ffdfdf;
+    	font-size: 28px;
+    	padding-top: 10px;
+}
+
+.buttons{
+	display: flex;
+	justify-content: flex-end;
+	align-content: center;
+	width: 78%;
+	gap : 15px;
+}
+
+button {
+	font-family: 'Concert One';
+    	color: #edc8c8;
+    	font-size: 30px;
+    	background: black;
+    	border-style: none;
+    	border-radius: 10px;
+    	font-variant: all-small-caps;
+    	padding-bottom: 5px;
+}
+
+button:hover{
+	font-family: 'Concert One';
+    	color: #edc8c8;
+    	font-size: 32px;
+    	background: #370000;
+    	border-style: none;
+    	border-radius: 10px;
+    	font-variant: all-small-caps;
+    	padding-bottom: 5px;
+}
+
+.transformacao-rodar, .transformacao-updown {
+	margin-top: 20px;
+
+}
+
+.transformacao-codigo {
+	display: flex;
+	justify-content: center;
+}
+
+.transformacao-border {
+	height: 400px;
+	width: 600px;
+	border: 5px solid black;
+	background: #b1505099;
+	margin-bottom: 80px;
+}
+
+.transformacao-codigo-titulo {
+	width: 100%;
+	height: 35px;
+	background: black;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.transformacao-codigo-titulo-escrito {
+	font-family: 'Concert One', sans-serif;
+	color: #dddddd;
+	font-size: 25px;
+        margin-top: 0px;
+	margin-left: 10px;
+}
+
+.transformacao-codigo-titulo-escrito-x {
+	font-family: 'Concert One', sans-serif;
+	color: #dddddd;
+	font-size: 22px;
+	border: 2px solid #dddddd;
+	width: 22px;
+	height: 22px;
+	padding-bottom: 3px;
+	margin-right: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.transformacao-codigo-texto {
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 23px;
+	margin-left: 70px;
+        font-variant: all-small-caps;
+}
+
+.transformacao-rodar-animacao{
+	margin: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*/KEYFRAME---------------------------------------------------------------------*/
+
+.transformacao-keyframe {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.transformacao-keyframe-border {
+	height: 300px;
+	width: 700px;
+	border: 5px solid black;
+	background: #353535e8;
+	margin-bottom: 80px;
+}
+
+.transformacao-codigo-texto-keyframe {
+	font-family: 'IBM Plex Mono', monospace;
+    	font-size: 24px;
+    	line-height: 10px;
+    	margin-left: 100px;
+    	font-variant: all-small-caps;
+    	color: #e1e1e1;
+    	font-weight: 100;
+}
+
+.transformacao-codigo-texto-keyframe-wiggle {
+	font-family: 'IBM Plex Mono', monospace;
+    	font-size: 22px;
+    	line-height: 10px;
+    	margin-left: 100px;
+    	font-variant: all-small-caps;
+    	color: #e1e1e1;
+    	font-weight: 100;
+}
+
+.keyframe-wiggle{
+	display: flex;
+	gap: 10px;
+}
+
+.transformacao-rodar-box, .transformacao-updown-box,
+.transformacao-left-box, .transformacao-whiteblack-box,
+.transformacao-opacity-box, .transformacao-wiggle-box{
+	width: 100px;
+	height: 100px;
+	background: black;
+}
+
+@keyframes rodar{
+	from{
+		transform: rotate (0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+.transformacao-updown-animacao{
+	margin: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+
+.transformacao-updown-box {
+	margin-top: 200px;
+}
+
+@keyframes updown{
+	0%{
+		margin-bottom: 0%;
+	}
+	50%{
+		margin-bottom: 450px;		
+	}
+	100%{
+		margin-bottom: 0%;
+	}
+}
+
+.transformacao-left-animacao{
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+}
+
+@keyframes left{
+	0%{
+		margin-left: 0%;
+	}
+	50%{
+		margin-left: 50% ;		
+	}
+	100%{
+		margin-left: 0%;
+	}
+}
+
+.transformacao-whiteblack-animacao,
+.transformacao-opacity-animacao,
+.transformacao-wiggle-animacao{
+	margin: 70px;
+    	padding-bottom: 70px;
+}
+
+@keyframes whiteblack{
+	0%{
+		background: white;
+	}
+	50%{
+		background: grey;		
+	}
+	100%{
+		background: black;
+	}
+}
+
+
+@keyframes opacity{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;	
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes wiggle {
+	0%, 7% {
+		transform: rotateZ(0);
+	}
+	15% {
+		transform: rotateZ(-15deg);
+	}
+	20% {
+		transform: rotateZ(10deg);
+	}
+	25% {
+		transform: rotateZ(-10deg);
+	}
+	30% {
+		transform: rotateZ(6deg);
+	}
+	35% {
+		transform: rotateZ(-4deg);
+	}
+	40%, 100% {
+		transform: rotateZ(0);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*RODAPE-------------------------------------------*/
+
+.rodape {
+	display: flex;
+	justify-content: center;
+	border-top:  0.6px solid #fcfdffd9;
+	height: 50px;
+	align-items: center;
+}

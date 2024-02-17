@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>CSS</title>
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+     <footer class="cabecalho">
+	<h1 class="cabecalho-texto">CSS Animações</h1>
+     </footer>
+      
+     <div class="conteudo">
+
+	<div class="codigo">
+
+		<div class="codigo-texto">
+			<div class="codigo-texto-linha1">
+				<div class="codigo-texto-linha1-conteudo">@keyframes </div>
+				<div class="codigo-texto-linha1-palavra">rodar</div> 
+				<div class="codigo-texto-linha1-conteudo">{</div>
+			</div>
+			<div class="codigo-texto-linha2">
+				<div class="codigo-texto-linha2-palavra">from</div> 
+				<div class="codigo-texto-linha2-conteudo">{</div>
+			</div>
+			<div class="codigo-texto-linha3">
+				<div class="codigo-texto-linha3-palavra">transform</div> 
+				<div class="codigo-texto-linha3-conteudo">:  rotate (0deg);</div>
+			</div>
+			<div class="codigo-texto-linha4">
+				<div class="codigo-texto-linha3-conteudo">}</div>
+			</div>
+			<div class="codigo-texto-linha5">
+				<div class="codigo-texto-linha5-palavra">to</div>
+				<div class="codigo-texto-linha5-conteudo">{</div>
+			</div>
+			<div class="codigo-texto-linha6">
+				<div class="codigo-texto-linha6-conteudo">transform: rotate</div>
+				<div class="codigo-texto-linha6-palavra">(360deg);</div>
+			</div>
+			<div class="codigo-texto-linha7">
+				<div class="codigo-texto-linha3-conteudo">}</div>
+			</div>
+			<div class="codigo-texto-linha8">
+				<div class="codigo-texto-linha3-conteudo">}</div>
+			</div>
+
+		</div>
+
+		<div class="codigo-descricao">
+			<div class="codigo-descricao-linha1">
+				<div class="codigo-descricao-cor1"></div>
+				<div class="codigo-descricao-conteudo">Nome da Animação</div>
+			</div>
+			<div class="codigo-descricao-linha2">
+				<div class="codigo-descricao-cor2"></div>
+				<div class="codigo-descricao-conteudo">Inicio da Animação</div>
+			</div>
+			<div class="codigo-descricao-linha3">
+				<div class="codigo-descricao-cor3"></div>
+				<div class="codigo-descricao-conteudo">Tipo da Transformação</div>
+			</div>
+			<div class="codigo-descricao-linha4">
+				<div class="codigo-descricao-cor4"></div>
+				<div class="codigo-descricao-conteudo">Fim da Animação</div>
+			</div>
+			<div class="codigo-descricao-linha5">
+				<div class="codigo-descricao-cor5"></div>
+				<div class="codigo-descricao-conteudo">Graus de Rotação</div>
+			</div>
+		</div>
+
+	</div><!--codigo-->
+
+
+
+   <div class="transformacao">
+
+        <div class="transformacao-rodar">
+		<div class="hr-transformacao">Rodar</div>
+		<div class="buttons" style="margin-bottom: 30px;">
+			<button id="buttonRodar">Animar</button>
+			<button id="buttonRodarParar">Parar</button>
+		</div>
+
+		<div class="transformacao-codigo" style="height: 450px;">
+			<div class="transformacao-border">
+				<div class="transformacao-codigo-titulo">
+					<h1 class="transformacao-codigo-titulo-escrito">Estilo CSS</h1>
+					<div class="transformacao-codigo-titulo-escrito-x">x</div>
+				</div>
+				<h2 class="transformacao-codigo-texto" style="margin-left: 20px;">div {</h2>
+				<h2 class="transformacao-codigo-texto">animation-name: rodar;</h2>
+				<h2 class="transformacao-codigo-texto">animation-duration: 5s;</h2>
+				<h2 class="transformacao-codigo-texto">animation-timing-function: linear;</h2>
+				<h2 class="transformacao-codigo-texto">animation-iteration-count: black;</h2>
+				<h2 class="transformacao-codigo-texto">animation-direction: alternative;</h2>
+				<h2 class="transformacao-codigo-texto" style="margin-left: 20px;">}</h2>
+			</div>
+
+		<div class="transformacao-rodar-animacao">
+			<div class="transformacao-rodar-box" id="boxRodar">a</div>
+		</div><!--animacao-->
+		</div>
+
+		<div class="transformacao-keyframe">
+			<div class="transformacao-keyframe-border">
+				<div class="transformacao-codigo-titulo">
+					<h1 class="transformacao-codigo-titulo-escrito">KeyFrame</h1>
+					<div class="transformacao-codigo-titulo-escrito-x">x</div>
+				</div>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 20px;">@keyframes rodar{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">from{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">transform: rotate (0deg);{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">to{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">transform: rotate(360deg);</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 20px;">}</h2>
+			</div>
+		</div>
+	</div><!--rodar-->
+
+
+
+	<div class="transformacao-updown">
+		<div class="hr-transformacao">Subir e Descer</div>
+		<div class="buttons" style="margin-bottom: 30px;">
+			<button id="buttonUpdown">Animar</button>
+			<button id="buttonUpdownParar">Parar</button>
+		</div>
+
+		<div class="transformacao-codigo" style="height: 400px; display: flex; justify-content: center; align-items: center;">
+			<div class="transformacao-border" style="height: 300px;">
+				<div class="transformacao-codigo-titulo">
+					<h1 class="transformacao-codigo-titulo-escrito">Estilo CSS</h1>
+					<div class="transformacao-codigo-titulo-escrito-x">x</div>
+				</div>
+				<h2 class="transformacao-codigo-texto" style="margin-left: 20px; margin-top: 60px;">div {</h2>
+				<h2 class="transformacao-codigo-texto">animation: updown 8s(/infinite) linear 10s alternate;</h2>
+				<h2 class="transformacao-codigo-texto" style="margin-left: 20px;">}</h2>
+			</div>
+
+		<div class="transformacao-updown-animacao">
+			<div class="transformacao-updown-box" id="boxUpdown">a</div>
+		</div><!--animacao-->
+		</div>
+
+		<div class="transformacao-keyframe">
+			<div class="transformacao-keyframe-border" style="height: 400px;">
+				<div class="transformacao-codigo-titulo">
+					<h1 class="transformacao-codigo-titulo-escrito">KeyFrame</h1>
+					<div class="transformacao-codigo-titulo-escrito-x">x</div>
+				</div>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 20px;">@keyframes updown{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">0%{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">margin-bottom: 0%;</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">50%{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">margin-bottom: 450px;</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">100%{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">margin-bottom: 0%;</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 20px;">}</h2>
+			</div>
+		</div>
+	</div><!--updown-->
+		
+
+	<div class="transformacao-left">
+		<div class="hr-transformacao">Deslizar para Direita</div>
+		<div class="transformacao-codigo" style="margin-top: 30px;">
+			<div class="transformacao-border" style="height: 200px; margin-bottom: 20px;">
+				<div class="transformacao-codigo-titulo">
+					<h1 class="transformacao-codigo-titulo-escrito">Estilo CSS</h1>
+					<div class="transformacao-codigo-titulo-escrito-x">x</div>
+				</div>
+				<h2 class="transformacao-codigo-texto" style="margin-left: 20px;">div {</h2>
+				<h2 class="transformacao-codigo-texto">left 5s linear 3 alternate;</h2>
+				<h2 class="transformacao-codigo-texto" style="margin-left: 20px;">}</h2>
+			</div>
+		</div>
+
+		<div class="buttons" style="margin-bottom: 80px;  justify-content: center; width: 100%;">
+			<button id="buttonLeft">Animar</button>
+			<button id="buttonLeftParar">Parar</button>
+		</div>
+
+		<div class="transformacao-left-animacao">
+			<div class="transformacao-left-box" id="boxLeft">a</div>
+		</div>
+
+		<div class="transformacao-keyframe" style="margin-top: 80px;">
+			<div class="transformacao-keyframe-border" style="height: 375px;">
+				<div class="transformacao-codigo-titulo">
+					<h1 class="transformacao-codigo-titulo-escrito">KeyFrame</h1>
+					<div class="transformacao-codigo-titulo-escrito-x">x</div>
+				</div>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 20px;">@keyframes left{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">0%{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">margin-left: 0%;</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">50%{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">margin-left: 50%;</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">100%{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">margin-left: 0%;</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 20px;">}</h2>
+			</div>
+		</div>
+	</div><!--left-->
+
+
+
+	<div class="transformacao-whiteblack">
+		<div class="hr-transformacao">Mudança de Cor</div>
+		<div class="buttons" style="margin-bottom: 50px;">
+			<button id="buttonWhiteblack">Animar</button>
+			<button id="buttonWhiteblackParar">Parar</button>
+		</div>
+
+		<div class="transformacao-codigo" style="height: 350px; display: flex; justify-content: center; align-items: center;">
+			<div class="transformacao-border" style="height: 300px;">
+				<div class="transformacao-codigo-titulo">
+					<h1 class="transformacao-codigo-titulo-escrito">Estilo CSS</h1>
+					<div class="transformacao-codigo-titulo-escrito-x">x</div>
+				</div>
+				<h2 class="transformacao-codigo-texto" style="margin-left: 20px; margin-top: 50px;">div {</h2>
+				<h2 class="transformacao-codigo-texto">animation: whiteblack 2.5s cubic-bezier(0.05, 0.35, 0.77, 1.08) infinite</h2>
+				<h2 class="transformacao-codigo-texto" style="margin-left: 20px;">}</h2>
+			</div>
+
+		<div class="transformacao-whiteblack-animacao">
+			<div class="transformacao-whiteblack-box" id="boxWhiteblack"></div>
+		</div><!--animacao-->
+		</div>
+
+		<div class="transformacao-keyframe">
+			<div class="transformacao-keyframe-border" style="height: 400px;">
+				<div class="transformacao-codigo-titulo">
+					<h1 class="transformacao-codigo-titulo-escrito">KeyFrame</h1>
+					<div class="transformacao-codigo-titulo-escrito-x">x</div>
+				</div>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 20px;">@keyframes whiteblack{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">0%{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">background: white;</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">50%{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">background: grey;</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">100%{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">background: black;</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 20px;">}</h2>
+			</div>
+		</div>
+	</div><!--whiteblack-->
+
+
+
+	<div class="transformacao-opacity">
+		<div class="hr-transformacao">Mudança de Opacidade</div>
+		<div class="buttons" style="margin-bottom: 50px;">
+			<button id="buttonOpacity">Animar</button>
+			<button id="buttonOpacityParar">Parar</button>
+		</div>
+
+		<div class="transformacao-codigo" style="height: 350px; display: flex; justify-content: center; align-items: center;">
+			<div class="transformacao-border" style="height: 300px;">
+				<div class="transformacao-codigo-titulo">
+					<h1 class="transformacao-codigo-titulo-escrito">Estilo CSS</h1>
+					<div class="transformacao-codigo-titulo-escrito-x">x</div>
+				</div>
+				<h2 class="transformacao-codigo-texto" style="margin-left: 20px; margin-top: 50px;">div {</h2>
+				<h2 class="transformacao-codigo-texto">animation: opacity 5s linear infinite</h2>
+				<h2 class="transformacao-codigo-texto" style="margin-left: 20px;">}</h2>
+			</div>
+
+		<div class="transformacao-opacity-animacao">
+			<div class="transformacao-opacity-box" id="boxOpacity"></div>
+		</div><!--animacao-->
+		</div>
+
+		<div class="transformacao-keyframe">
+			<div class="transformacao-keyframe-border" style="height: 400px;">
+				<div class="transformacao-codigo-titulo">
+					<h1 class="transformacao-codigo-titulo-escrito">KeyFrame</h1>
+					<div class="transformacao-codigo-titulo-escrito-x">x</div>
+				</div>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 20px;">@keyframes opacity{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">0%{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">opacity: 0;</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">50%{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">opacity: 0.5;</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">100%{</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 120px;">opacity: 1;</h2>
+				<h2 class="transformacao-codigo-texto-keyframe">}</h2>
+				<h2 class="transformacao-codigo-texto-keyframe" style="margin-left: 20px;">}</h2>
+			</div>
+		</div>
+	</div><!--opacity-->
+
+
+
+	<div class="transformacao-wiggle">
+		<div class="hr-transformacao">Mexer</div>
+		<div class="buttons" style="margin-bottom: 50px;">
+			<button id="buttonWiggle">Animar</button>
+			<button id="buttonWiggleParar">Parar</button>
+		</div>
+
+		<div class="transformacao-codigo" style="height: 300px; display: flex; justify-content: center; align-items: center;">
+			<div class="transformacao-border" style="height: 200px;">
+				<div class="transformacao-codigo-titulo">
+					<h1 class="transformacao-codigo-titulo-escrito">Estilo CSS</h1>
+					<div class="transformacao-codigo-titulo-escrito-x">x</div>
+				</div>
+				<h2 class="transformacao-codigo-texto" style="margin-left: 20px; margin-top: 10px;">div {</h2>
+				<h2 class="transformacao-codigo-texto">animation: wiggle 2s linear infinite</h2>
+				<h2 class="transformacao-codigo-texto" style="margin-left: 20px;">}</h2>
+			</div>
+
+		<div class="transformacao-wiggle-animacao">
+			<div class="transformacao-wiggle-box" id="boxWiggle"></div>
+		</div><!--animacao-->
+		
+		</div>
+
+		<div class="transformacao-keyframe">
+			<div class="transformacao-keyframe-border" style="height: 450px; width: 800px;">
+				<div class="transformacao-codigo-titulo">
+					<h1 class="transformacao-codigo-titulo-escrito">KeyFrame</h1>
+					<div class="transformacao-codigo-titulo-escrito-x">x</div>
+				</div>
+				<div class="keyframe-wiggle">
+					<div class="keyframe-wiggle1">
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle" style="margin-left: 20px;">@keyframes wiggle{</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">0%, 7%{</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle" style="margin-left: 120px;">transform: rotateZ(0);</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">}</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">15%{</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle" style="margin-left: 120px;">transform: rotateZ(-15deg);</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">}</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">20%{</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle" style="margin-left: 120px;">transform: rotateZ(10deg);</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">}</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">25%</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle" style="margin-left: 120px;">transform: rotateZ(-10deg);</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">}</h2>
+					</div>
+					<div class="keyframe-wiggle2">
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">30%{</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle" style="margin-left: 120px;">transform: rotateZ(6deg);</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">}</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">35%{</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle" style="margin-left: 120px;">transform: rotateZ(-4deg);</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">}</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">40%, 100%{</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle" style="margin-left: 120px;">transform: rotateZ(0);</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle">}</h2>
+						<h2 class="transformacao-codigo-texto-keyframe-wiggle" style="margin-left: 20px;">}</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--wiggle-->
+		
+
+
+        </div><!--transformacao-->
+
+		
+
+     </div><!--conteudo-->
+	
+     <footer class="rodape" style="margin-top: 100px;">
+	<h1 class="cabecalho-texto">CSS</h1>
+     </footer>
+
+
+	<script type="text/javascript" src="script.js"></script>
+   </body>
+</html>
